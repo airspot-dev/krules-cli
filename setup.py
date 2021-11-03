@@ -8,7 +8,7 @@ def read(fname):
 
 setup(
     name='krules-cli',
-    version='0.2.1',
+    version='0.2.2',
     author="Alberto Degli Esposti",
     author_email="alberto@arispot.tech",
     description="KRules command line utility",
