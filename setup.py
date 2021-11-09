@@ -19,7 +19,7 @@ setup(
     install_requires=[
         'click',
         'gitpython',
-        'mdv',
+        'mdv3',
         'krules-dev-support'
     ],
     entry_points={
