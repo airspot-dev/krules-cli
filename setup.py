@@ -7,7 +7,7 @@ def read(fname):
 
 setup(
     name='krules-cli',
-    version='0.2.3',
+    version='0.2.3.1',
     author="Alberto Degli Esposti",
     author_email="alberto@arispot.tech",
     description="KRules command line utility",
@@ -15,7 +15,7 @@ setup(
     keywords="krules knative kubernetes eventing microservices serverless",
     url="https://github.com/airspot-dev/krules",
     long_description=read('README.md'),
-    py_modules=['krules_cli'],
+    packages=['krules_cli'],
     install_requires=[
         'click',
         'gitpython',
