@@ -99,7 +99,7 @@ def create(ctx, template, dest, env):
             env_d[name.upper()] = value
         got_errors = not hook_mod.on_create(ctx, click, dest, env_d, tag)
         os.unlink(os.path.join(dest, "__hook__.py"))
-        shutil.rmtree(os.path.join(dest, "__pycache__"))
+        shutil.rmtree(os.path.join(dest, "__pycache__"), ignore_errors=True)
     if got_errors:
         shutil.rmtree(dest)
         click.secho("Hook got errors", fg="red", err=True)

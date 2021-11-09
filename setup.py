@@ -1,13 +1,14 @@
 import os
 
 from setuptools import setup
+from setuptools import setup, find_packages
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
     name='krules-cli',
-    version='0.2.3.1',
+    version='0.2.3.4',
     author="Alberto Degli Esposti",
     author_email="alberto@arispot.tech",
     description="KRules command line utility",
@@ -15,7 +16,7 @@ setup(
     keywords="krules knative kubernetes eventing microservices serverless",
     url="https://github.com/airspot-dev/krules",
     long_description=read('README.md'),
-    packages=['krules_cli'],
+    packages=find_packages(),
     install_requires=[
         'click',
         'gitpython',
