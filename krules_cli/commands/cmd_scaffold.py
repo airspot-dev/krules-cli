@@ -122,7 +122,7 @@ def list(ctx):
         if len(doc_lines):
             abstract = doc_lines[0]
         out.append(" ".join((f"**{template}**".ljust(15), abstract)))
-    click.echo(mdv.main("\n".join(out)))
+    click.echo(mdv.main("\n\n".join(out)))
 
 @scaffold.command(help="Get info about template")
 @click.argument("template")
