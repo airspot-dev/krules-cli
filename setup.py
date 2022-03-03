@@ -8,7 +8,7 @@ def read(fname):
 
 setup(
     name='krules-cli',
-    version='0.2.3.4',
+    version='0.3',
     author="Alberto Degli Esposti",
     author_email="alberto@arispot.tech",
     description="KRules command line utility",
@@ -21,7 +21,7 @@ setup(
         'click',
         'gitpython',
         'mdv3',
-        'krules-dev-support'
+        'krules-dev-support==0.11.1'
     ],
     entry_points={
         'console_scripts': [
